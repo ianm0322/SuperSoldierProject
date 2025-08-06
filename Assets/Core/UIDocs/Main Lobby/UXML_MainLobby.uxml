@@ -1,0 +1,18 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Core/UIDocs/Main%20Lobby/USS_MainLobby.uss?fileID=7433441132597879392&amp;guid=de345f0955c3dbe49913883adf1f7492&amp;type=3#USS_MainLobby" />
+    <engine:VisualElement name="root" style="flex-grow: 1; flex-direction: row;">
+        <engine:VisualElement name="left-space" style="flex-grow: 1;" />
+        <engine:VisualElement name="content" style="flex-grow: 1; width: 60%;">
+            <engine:VisualElement name="top-space" style="flex-grow: 0; height: 56%; flex-basis: 10%; flex-shrink: 1; position: relative; right: auto; top: auto; left: auto; bottom: auto;" />
+            <engine:Label text="Super Soldier Project" name="title" class="title-text" style="flex-grow: 0; flex-basis: 15%;" />
+            <engine:VisualElement name="button-group" style="flex-grow: 1; align-self: auto; align-items: center; align-content: auto; margin-top: 116px;">
+                <engine:Button text="Continue" name="continue-button" triple-click-selects-line="false" double-click-selects-word="false" enabled="true" class="button" />
+                <engine:Button text="Story Mode" name="select-stage-button" double-click-selects-word="false" triple-click-selects-line="false" class="button" />
+                <engine:Button text="Chellange Mode" name="chellange-mode-button" double-click-selects-word="false" triple-click-selects-line="false" class="button" />
+                <engine:Button text="Option" name="option-button" triple-click-selects-line="false" double-click-selects-word="false" class="button" />
+                <engine:Button text="Quit" name="quit-button" triple-click-selects-line="false" double-click-selects-word="false" class="button" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="rigth-space" style="flex-grow: 1;" />
+    </engine:VisualElement>
+</engine:UXML>

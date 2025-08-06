@@ -1,0 +1,5 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Core/UIDocs/NarrationPrompt/USS_NarrationPrompt.uss?fileID=7433441132597879392&amp;guid=a0f94265e99849b49b072943997a5cbb&amp;type=3#USS_NarrationPrompt" />
+    <engine:VisualElement name="space" style="flex-grow: 1;" />
+    <engine:ListView name="prompt-list" allow-add="true" allow-remove="true" focusable="false" show-add-remove-footer="false" virtualization-method="DynamicHeight" style="background-color: rgba(0, 0, 0, 0.25); margin-top: 29px; margin-right: 29px; margin-bottom: 29px; margin-left: 29px; padding-top: 40px; padding-right: 48px; padding-bottom: 40px; padding-left: 48px; height: 480px; transition-duration: 0.5s; flex-direction: column-reverse; justify-content: flex-end;" />
+</engine:UXML>

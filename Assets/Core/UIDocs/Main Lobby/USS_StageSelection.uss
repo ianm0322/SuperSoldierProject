@@ -1,0 +1,11 @@
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.button:disabled {
+    background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,16 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Core/UIDocs/PlayerHUD/PlayerHudDocs.uss?fileID=7433441132597879392&amp;guid=3e7c133b9f8652944b558793ef228b6f&amp;type=3#PlayerHudDocs" />
+    <engine:VisualElement name="root" style="flex-grow: 1; height: 10px; justify-content: center;">
+        <engine:VisualElement name="crosshair" class="crosshair-hookable" style="flex-grow: 0; align-self: center; width: 100px; height: 100px; flex-shrink: 0; justify-content: center; position: absolute; top: auto; left: auto; align-items: center; right: auto; bottom: auto; background-image: url(&quot;project://database/Assets/Core/Textures/UI/Crosshair/crosshair158.png?fileID=2800000&amp;guid=d402d4b6f52df4942b499dd1cfe67e99&amp;type=3#crosshair158&quot;); transform-origin: right bottom; transition-property: -unity-background-image-tint-color; transition-duration: 0.1s;">
+            <engine:VisualElement name="ammo-group" style="flex-grow: 1; position: absolute; top: 100px; flex-direction: row;">
+                <engine:VisualElement name="ammo" class="ammo-enable ammo" style="flex-grow: 1; position: relative; top: auto;" />
+                <engine:VisualElement name="ammo" class="ammo-enable ammo" style="flex-grow: 1; position: relative; top: auto;" />
+                <engine:VisualElement name="ammo" class="ammo-enable ammo" style="flex-grow: 1; position: relative; top: auto;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="melee-progress-bar" style="flex-grow: 1; position: absolute; left: 120px; height: 80px; width: 6px; background-image: url(&quot;project://database/Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/White1px.png?fileID=2800000&amp;guid=127279d577f25ac4ea17dae3782e5074&amp;type=3#White1px&quot;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.6); background-position-y: bottom 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="timer-panel" style="flex-grow: 1; position: absolute; top: 0; align-self: stretch; height: 120px; right: 0; left: 0; bottom: auto; align-items: center;">
+            <engine:Label name="timer-text" text="TEST TIME" class="timer-text" style="flex-grow: 1; width: 600px;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

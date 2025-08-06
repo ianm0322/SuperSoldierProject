@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Core/UIDocs/Tutorial/USS_Tutorial.uss?fileID=7433441132597879392&amp;guid=4c6d08850dc9635419ac40b95872c14b&amp;type=3#USS_Tutorial" />
+    <engine:VisualElement name="space" style="flex-grow: 1; position: relative;" />
+    <engine:VisualElement name="tutorial-root" style="flex-grow: 0; height: auto; flex-shrink: 0; width: auto;">
+        <engine:Label name="tutorial-text" enable-rich-text="false" text="텍스트를 입력하세요." class="text background padding align-center disabled" style="transition-duration: 0.25s;" />
+    </engine:VisualElement>
+    <engine:VisualElement name="space" style="flex-grow: 0.1; position: relative;" />
+</engine:UXML>

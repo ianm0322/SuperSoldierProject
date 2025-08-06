@@ -1,0 +1,35 @@
+.crosshair-hookable {
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.6);
+}
+
+.crosshair-nothookable {
+    -unity-background-image-tint-color: rgba(108, 108, 108, 0.6);
+}
+
+.ammo-enable {
+    background-color: rgba(255, 255, 255, 0.6);
+    transition-duration: 0.2s;
+}
+
+.ammo-disable {
+    background-color: rgba(108, 108, 108, 0.6);
+}
+
+.ammo-hidden {
+    display: none;
+}
+
+.ammo {
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+}
+
+.timer-text {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    -unity-text-align: middle-center;
+}

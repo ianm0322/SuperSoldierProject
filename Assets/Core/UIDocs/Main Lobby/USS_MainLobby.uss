@@ -1,0 +1,27 @@
+.title-text {
+    color: rgb(255, 255, 0);
+    font-size: 120px;
+    -unity-text-align: middle-center;
+}
+
+.button {
+    height: 78px;
+    width: 687px;
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(103, 103, 103);
+    opacity: 1;
+}
+
+.button:hover {
+    transition-duration: 0.1s;
+    transition-property: transform-origin;
+    scale: 1.05 1.05;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}

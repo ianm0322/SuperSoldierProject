@@ -1,0 +1,24 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Core/UIDocs/Main%20Lobby/USS_StageSelection.uss?fileID=7433441132597879392&amp;guid=5ae292d5954112740a97c9c8a091120c&amp;type=3#USS_StageSelection" />
+    <engine:VisualElement name="background" style="flex-grow: 1; background-color: rgb(84, 84, 84); margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; flex-shrink: 1; width: 660px; height: 860px; opacity: 1;">
+        <engine:Label name="title" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" style="height: 120px; background-color: rgb(60, 60, 60); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 13px; padding-right: 13px; padding-bottom: 13px; padding-left: 13px; color: rgb(255, 255, 255); flex-grow: 0; flex-shrink: 0; font-size: 32px; -unity-text-align: middle-center; display: flex;">
+            <Bindings>
+                <engine:DataBinding property="text" data-source-path="title" binding-mode="ToTarget" />
+            </Bindings>
+        </engine:Label>
+        <engine:VisualElement name="thumbnail" style="flex-grow: 2; height: auto; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 17px; padding-right: 17px; padding-bottom: 17px; padding-left: 17px; background-color: rgba(0, 0, 0, 0.11); background-image: none; -unity-background-scale-mode: scale-and-crop;">
+            <Bindings>
+                <engine:DataBinding property="style.backgroundImage" binding-mode="ToTarget" data-source-path="thumbnail" />
+            </Bindings>
+        </engine:VisualElement>
+        <engine:VisualElement name="record-layout" style="flex-grow: 1; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px;">
+            <engine:Label text="Best Record" name="best-record-title" style="height: 70px; -unity-text-align: middle-center; color: rgb(255, 255, 255); font-size: 28px;" />
+            <engine:Label name="best-record" data-source-type="PrSuperSoldier.StageInfoSO, Assembly-CSharp" style="color: rgb(255, 255, 255); -unity-text-align: middle-center; font-size: 21px;" />
+        </engine:VisualElement>
+        <engine:Button name="button" class="button" style="flex-grow: 1; flex-shrink: 1; position: absolute; width: 100%; height: 100%; transition-duration: 0.1s; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; display: flex;">
+            <Bindings>
+                <engine:DataBinding property="enabledSelf" data-source-path="isLocked" binding-mode="ToTarget" source-to-ui-converters="BooleanNegative" />
+            </Bindings>
+        </engine:Button>
+    </engine:VisualElement>
+</engine:UXML>
