@@ -20,12 +20,16 @@ namespace PrSuperSoldier
 
         private void Start()
         {
-            GotoMainLobby();
+            GotoStageSelect();
+            //GotoMainLobby();
             Debug.Log("Main Menu Initialized");
-            Invoke(nameof(MoveScene), 3f);
         }
-        private void MoveScene()
+        private async void MoveScene(float delay)
         {
+            if(delay > 0)
+            {
+                await UniTask.WaitForSeconds(delay);
+            }
             SceneManager.LoadScene("TestStage_001");
         }
 
@@ -53,6 +57,18 @@ namespace PrSuperSoldier
             _mainMenuStage = MainMenuState.MainMenu;
 
             Debug.Log($"Current Menu State: {_mainMenuStage}");
+        }
+
+        private void OnDisable()
+        {
+            if (_mainUIDocs)
+            {
+                _mainUIDocs.gameObject.SetActive(false);
+            }
+            if (_stageSelectUIDocs)
+            {
+                _stageSelectUIDocs.gameObject.SetActive(false);
+            }
         }
 
 

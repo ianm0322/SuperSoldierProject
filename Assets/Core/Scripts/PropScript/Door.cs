@@ -99,11 +99,12 @@ namespace PrSuperSoldier.Props
                 OpenImmediately();
             }
 
-            Observable.EveryValueChanged(this, (o) => o._t)
-                .Subscribe((t) =>
-                {
-                    ApplyDoorPosition();
-                });
+            ApplyDoorPosition();
+        }
+
+        private void Update()
+        {
+            ApplyDoorPosition();
         }
 
         [ContextMenu("# Run Open Anim")]
